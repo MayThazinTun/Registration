@@ -1,0 +1,72 @@
+body{
+    background-image: url("Images/P1.jpeg");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid rgba(48, 46, 46, 0.404);
+    margin: 50px;
+    background-color: rgba(243, 112, 166, 0.616);
+}
+.content{
+    color: whitesmoke;
+    padding-top: 100px;
+    width: 500px;
+    text-align: center;
+}
+.content>p{
+    font-size: 20px;
+}
+.register{
+    color: whitesmoke;
+    margin-right: 20px;
+    text-align: center;
+    align-content: center;
+
+}
+.register>div{
+    text-align: center;
+    height: fit-content;
+    margin-left: 200px;
+    padding : 10px;
+    width: fit-content;
+    background-color: white;
+    border: 0px;
+    border-radius: 10000px;
+}
+.register>input{
+    border: 0.5px solid rgba(243, 112, 167, 0.959);
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 20px;
+    display: block;
+    font-size: 20px;
+    width: 400px;
+    height: 30px;
+}
+.register>button{
+    border: 0.5px solid rgba(243, 112, 167, 0.959);
+    background-color: rgb(230, 52, 126);
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+@media(max-width:900px) and (min-width:700px){
+    .content{
+        display: none;
+    }
+}
+@media(max-width:700px){
+    .content{
+        display: none;
+    }
+    .register>div{
+        margin-left: 150px;
+    }
+    .register>input{
+        width: 300px;
+    }
+}
